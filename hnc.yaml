@@ -671,6 +671,7 @@ spec:
         - --excluded-namespace=hnc-system
         - --excluded-namespace=kube-node-lease
         - --excluded-namespace=subscripify-oauth
+        - --excluded-namespace=subscripify-api-gateway
         - --nopropagation-label=cattle.io/creator=norman
         - --enable-internal-cert-management
         - --cert-restart-on-secret-refresh
