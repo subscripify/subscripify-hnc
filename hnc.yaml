@@ -698,6 +698,7 @@ spec:
           name: healthz
           protocol: TCP
         readinessProbe:
+          initialDelaySeconds: 300
           httpGet:
             path: /readyz
             port: 8081
@@ -723,7 +724,7 @@ spec:
           httpGet:
             path: /readyz
             port: 8081
-          periodSeconds: 5
+          periodSeconds: 300
         volumeMounts:
         - mountPath: /tmp/k8s-webhook-server/serving-certs
           name: cert
