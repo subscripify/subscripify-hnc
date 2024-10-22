@@ -1,0 +1,10 @@
+apiVersion: approuting.kubernetes.azure.com/v1alpha1
+kind: NginxIngressController
+metadata:
+  name: nginx-web-app-controller
+spec:
+  controllerNamePrefix: nginx-static
+  ingressClassName: nginx-static
+  loadBalancerAnnotations:
+    service.beta.kubernetes.io/azure-load-balancer-resource-group: core-cluster-rg
+    service.beta.kubernetes.io/azure-pip-name: subscripify-web-ip
