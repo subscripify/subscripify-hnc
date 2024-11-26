@@ -678,7 +678,7 @@ spec:
         - --excluded-namespace=subscripify-oauth
         - --excluded-namespace=subscripify-api-gateway
         - --managed-namespace-label=tenant\.(?:main|super)\.subscripify\.io\/\S+
-        - --managed-namespace-annotation=.tenant\.(?:main|super)\.subscripify\.io\/\S+
+        - --managed-namespace-annotation=tenant\.(?:main|super)\.subscripify\.io\/\S+
         command:
         - /manager
         image: gcr.io/k8s-staging-multitenancy/hnc-manager:v1.1.0
