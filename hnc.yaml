@@ -675,7 +675,7 @@ spec:
         - --nopropagation-label=cattle.io/creator=norman
         - --enable-internal-cert-management
         - --cert-restart-on-secret-refresh
-        - --excluded-namespace=subscripify-oauth
+        - --excluded-namespace=app-routing-system
         - --excluded-namespace=subscripify-api-gateway
         - --managed-namespace-label=tenant\.(?:thegn|super)\.subscripify\.io\/\S+
         - --managed-namespace-annotation=tenant\.(?:thegn|super)\.subscripify\.io\/\S+
