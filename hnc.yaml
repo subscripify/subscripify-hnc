@@ -677,8 +677,8 @@ spec:
         - --cert-restart-on-secret-refresh
         - --excluded-namespace=app-routing-system
         - --excluded-namespace=subscripify-api-gateway
-        - --managed-namespace-label=tenant\.(?:thegn|super)\.subscripify\.io\/\S+
-        - --managed-namespace-annotation=tenant\.(?:thegn|super)\.subscripify\.io\/\S+
+        - --managed-namespace-label=tenant\.(?:thegn|super|lord)\.subscripify\.io\/\S+
+        - --managed-namespace-annotation=tenant\.(?:thegn|super|lord)\.subscripify\.io\/\S+
         - --nopropagation-label=mindaro.io/component=lpkrestorationjob
         command:
         - /manager
