@@ -6,3 +6,5 @@ spec:
   resources:
   - mode: AllowPropagate
     resource: configmap
+  - mode: AllowPropagate
+    resource: secret
